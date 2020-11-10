@@ -8,6 +8,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
+      <Route exact path="/" component={Search} />
+          <Route exact path="/books" component={Saved} />
+          <Route path="/" component={NotFound} />
       </Switch>
     <Footer />
     </div>
