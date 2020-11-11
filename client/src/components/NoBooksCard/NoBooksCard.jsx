@@ -1,4 +1,5 @@
 import React from "react";
+import "./NoBooksCard.css";
 
 const NoBooksCard = (props) => {
   return (
