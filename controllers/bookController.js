@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require("../models");
 
 router.get("/", (req, res) => {
-  db.Book.find({})
+  db.Books.find({})
     .then((foundBooks) => {
       res.json(foundBooks);
     })
@@ -25,7 +25,7 @@ router.post("/", (req, res) => {
     image: req.body.image,
     link: req.body.link,
   };
-  db.Book.create(newBook)
+  db.Books.create(newBook)
     .then((newBook) => res.json(newBook))
     .catch((err) => {
       console.log(err);
@@ -38,7 +38,7 @@ router.post("/", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  db.Book.findByIdAndDelete(req.params.id)
+  db.Books.findByIdAndDelete(req.params.id)
     .then((deletedBook) => {
       res.json(deletedBook);
     })
