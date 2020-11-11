@@ -1,5 +1,13 @@
 import React, { useState } from "react";
+import Container from "../../components/Container/Container";
+import ContainerFluid from "../../components/ContainerFluid/ContainerFluid";
+import LogoHeader from "../../components/LogoHeader/LogoHeader";
+import Row from "../../components/Row/Row";
 import axios from "axios";
+import SearchResults from "../../components/SearchResults/SearchResults";
+import NoBooksCard from "../../components/NoBooksCard/NoBooksCard";
+import Alert from "../../components/Alert/Alert";
+import SaveModal from "../../components/SaveModal/SaveModal";
 
 const Search = () => {
   const [searchCategory, setSearchCategory] = useState("");
@@ -161,7 +169,7 @@ const Search = () => {
         <Row>
           {searchResults.length ? (
             searchResults.map((book, index) => (
-              <SearchResultCard
+              <SearchResults
                 book={book.volumeInfo}
                 key={index}
                 saveBook={saveBook}
