@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../books-search/models");
+const db = require("../models");
 
 router.get("/", (req, res) => {
   db.Book.find({})
