@@ -25,7 +25,7 @@ const SearchResults = ({ book, saveBook }) => {
                 role="button"
                 target="blank"
               >
-                Description
+                Get More Info
               </a>
               <button
                 className="btn btn-info ml-1"

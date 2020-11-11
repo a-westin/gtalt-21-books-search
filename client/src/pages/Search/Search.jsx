@@ -131,7 +131,7 @@ const Search = () => {
                   onChange={(e) => setSearchCategory(e.target.value)}
                 >
                   <option value="" className="disabled">
-                    Choose a Category
+                    Search by Title or Author
                   </option>
                   <option value="title">Title</option>
                   <option value="author">Author</option>
