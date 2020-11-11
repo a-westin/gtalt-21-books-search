@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
+import Container from "../../components/Container/Container";
+import Row from "../../components/Row/Row";
 import axios from "axios";
+import SavedBooks from "../../components/SavedBooks/SavedBooks";
+import NoBooksCard from "../../components/NoBooksCard/NoBooksCard"
 
 const Saved = () => {
   const [books, setBooks] = useState([]);
@@ -33,9 +37,6 @@ const Saved = () => {
 
   return (
     <>
-      <ContainerFluid>
-        <LogoHeader />
-      </ContainerFluid>
       <Container>
         <Row>
           <div className="col-sm-12 text-center my-5">
@@ -44,7 +45,7 @@ const Saved = () => {
         </Row>
         <Row>
           {books.length ? (
-            books.map((book, index) => <SavedBookCard {...book} key={index} deleteBook={deleteBook} />)
+            books.map((book, index) => <SavedBooks {...book} key={index} deleteBook={deleteBook} />)
           ) : (
             <NoBooksCard message="You haven't saved any books yet!" className="card mb-3"/>
           )}

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Container from "../../components/Container/Container";
-import ContainerFluid from "../../components/ContainerFluid/ContainerFluid";
-import LogoHeader from "../../components/LogoHeader/LogoHeader";
 import Row from "../../components/Row/Row";
 import axios from "axios";
 import SearchResults from "../../components/SearchResults/SearchResults";
@@ -114,9 +112,6 @@ const Search = () => {
 
   return (
     <>
-      <ContainerFluid>
-        <LogoHeader />
-      </ContainerFluid>
       <Container>
         <Row>
           <div className="col-sm-2"></div>
