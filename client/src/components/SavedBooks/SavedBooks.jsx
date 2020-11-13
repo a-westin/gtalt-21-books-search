@@ -15,7 +15,7 @@ const SavedBooks = ({ _id, title, authors, description, image, link, deleteBook 
               <h5 className="card-title">{title}</h5>
               <h6 className="card-text">Author: {authors.join(", ")}</h6>
               <p className="card-text">{description}</p>
-              <a href={link} className="btn btn-info mr-1" role="button" target="blank">
+              <a href={link} className="btn btn-primary mr-1" role="button" target="blank">
                Get More Info
               </a>
               <button

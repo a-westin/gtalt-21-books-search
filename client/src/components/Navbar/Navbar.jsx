@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <Link to="/" className="navbar-brand">
         Google Books Search
       </Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
             Search
           </NavLink>
           <NavLink to="/books" className="nav-link">
-            My Saved Books
+            My Books
           </NavLink>
         </div>
       </div>

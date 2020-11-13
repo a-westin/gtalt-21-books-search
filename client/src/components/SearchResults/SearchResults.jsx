@@ -21,14 +21,14 @@ const SearchResults = ({ book, saveBook }) => {
               <p className="card-text">{book.description ? book.description : ""}</p>
               <a
                 href={book.infoLink ? book.infoLink : "https://google.com"}
-                className="btn btn-info mr-1"
+                className="btn btn-primary mr-1"
                 role="button"
                 target="blank"
               >
                 Get More Info
               </a>
               <button
-                className="btn btn-info ml-1"
+                className="btn btn-primary ml-1"
                 onClick={(e) => saveBook(e, book)}
               >
                 Save 
