@@ -5,3 +5,8 @@ h1 {
 .col-sm-12 {
     width: 10vw;
 }
+
+#savedHeader {
+    color: whitesmoke;
+    -webkit-text-stroke: 1px black; 
+}

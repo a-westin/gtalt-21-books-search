@@ -14,3 +14,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.footer {
+  color: azure;
+  font-size: x-large;
+  -webkit-text-stroke: 1px black; 
+}
