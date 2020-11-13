@@ -28,9 +28,10 @@
   
   Use the dropdown menu on the main page to search for a book by Author or by Title. Once the search results are returned, users my either get more information from the google books API, or save the book to a list of favorites. Users also have the option to delete both saved books as well as search results.
   
+  ![Screen Shot 2020-11-12 at 9 15 59 PM](https://user-images.githubusercontent.com/69770137/99021402-985eb900-252e-11eb-8cf6-9cb6a5e7c953.png)
+  
   ![Screen Shot 2020-11-12 at 9 22 23 PM](https://user-images.githubusercontent.com/69770137/99020728-3baece80-252d-11eb-9ee7-22db7c788703.png)
   
-  ![Screen Shot 2020-11-12 at 9 14 13 PM](https://user-images.githubusercontent.com/69770137/99020735-3e112880-252d-11eb-9456-eddc536d85a3.png)
 
   ******
 
