@@ -1,4 +1,5 @@
 import React from "react";
+import "./SavedBooks.css";
 
 const SavedBooks = ({ _id, title, authors, description, image, link, deleteBook }) => {
 
@@ -18,7 +19,7 @@ const SavedBooks = ({ _id, title, authors, description, image, link, deleteBook 
                Get More Info
               </a>
               <button
-                className="btn btn-info ml-1"
+                className="btn btn-danger ml-1"
                 onClick={() => deleteBook(_id)}
               >
                 Delete

@@ -3,7 +3,8 @@ import Container from "../../components/Container/Container";
 import Row from "../../components/Row/Row";
 import axios from "axios";
 import SavedBooks from "../../components/SavedBooks/SavedBooks";
-import NoBooksCard from "../../components/NoBooksCard/NoBooksCard"
+import NoBooksCard from "../../components/NoBooksCard/NoBooksCard";
+import "../../pages/Saved/Saved.css";
 
 const Saved = () => {
   const [books, setBooks] = useState([]);
@@ -39,7 +40,7 @@ const Saved = () => {
     <>
       <Container>
         <Row>
-          <div className="col-sm-12 text-center my-5">
+          <div className="col-sm-12 text-center my-5" id="savedBooksCard">
             <h1>My Saved Books</h1>
           </div>
         </Row>

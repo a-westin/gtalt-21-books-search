@@ -7,6 +7,7 @@ import NoBooksCard from "../../components/NoBooksCard/NoBooksCard";
 import Alert from "../../components/Alert/Alert";
 import SaveModal from "../../components/SaveModal/SaveModal";
 
+
 const Search = () => {
   const [searchCategory, setSearchCategory] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
@@ -152,7 +153,7 @@ const Search = () => {
               </button>
               <button
                 type="button"
-                className="btn btn-warning ml-1"
+                className="btn btn-danger ml-1"
                 onClick={handleReset}
               >
                 Delete Search Results
